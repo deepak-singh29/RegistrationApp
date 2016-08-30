@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RegistrationApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="unit_sel">select unit</string>
+
+    <string-array name="unit_arrays">
+        <item>MFG</item>
+        <item>FNSP</item>
+        <item>EAS</item>
+        <item>SAPBI</item>
+        <item>ETA</item>
+    </string-array>
+
+    <string name="title_activity_dc__select">DC_SelectActivity</string>
+    <string name="dialog_message">Continue with registration ?</string>
+    <string name="dialog_title">Confirm</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_confirm">ConfirmActivity</string>
+
+</resources>

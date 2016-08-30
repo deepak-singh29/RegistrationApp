@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.registrationapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".RegistrationForm"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DC_SelectActivity"
+            android:label="@string/app_name" 
+            android:parentActivityName=".RegistrationForm">
+        </activity>
+        <activity
+            android:name=".ConfirmActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".DC_SelectActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.registrationapp.DC_SelectActivity" />
+        </activity>
+        <service android:name="MusicService"></service>
+    </application>
+
+</manifest>
